@@ -1,0 +1,36 @@
+.outline-none {
+    &:focus {
+        outline: none;
+    }
+}
+
+.font-size-reset {
+    font-size: 16px;
+}
+
+.opacity-3 {
+    opacity: .3;
+}
+
+.border-bold {
+    border-width: $border-width-bold;
+}
+
+.link-underline {
+    border-bottom: $border-width-bold solid transparent;
+    &:hover, &.active {
+        text-decoration: none;
+        border-bottom: $border-width-bold solid $primary;
+    }
+}
+
+.link-black{
+    color: $black;
+    &:focus {
+        color: $primary;
+        text-decoration: underline;
+    }
+    &:hover {
+        color: $link-hover-color;
+    }
+}

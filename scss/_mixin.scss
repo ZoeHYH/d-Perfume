@@ -1,0 +1,19 @@
+@mixin x2 {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution:192dpi) {
+        @content;
+    }
+}
+
+@mixin bgImg($url, $url2x) {
+    background: url($url) center/cover no-repeat;
+    @include x2() {
+        background-image: url($url2x)
+    }
+}
+
+@mixin textImg($url, $url2x) {
+    background: url($url) left center/contain no-repeat;
+    @include x2() {
+        background-image: url($url2x)
+    }
+}

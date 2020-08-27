@@ -1,0 +1,42 @@
+.logo {
+    height: 38px;
+    width: 128px;
+    &-primary {
+        @include textImg("../img/d'Perfume.png", "../img/d'Perfume@2x.png");
+    }
+    &-white {
+        height: 38px;
+        @include textImg("../img/d'Perfumew.png", "../img/d'Perfumew@2x.png");
+    }
+}
+
+header {
+    .header-navbar {
+        height: 56px;
+
+    }
+    .header-brands {
+        height: 52px;
+    }
+}
+
+.banner {
+    height: 480px;
+    @include bgImg("../img/banner-m.png", "../img/banner-m@2x.png");
+    @include media-breakpoint-up(sm) {
+        height: 870px;
+        @include bgImg("../img/banner.png", "../img/banner@2x.png");
+    }
+}
+
+.subscribe {
+    height: 600px;
+    @include bgImg("../img/subsctibe-m.png", "../img/subsctibe-m@2x.png");
+    @include media-breakpoint-up(sm) {
+        @include bgImg("../img/subscribe.png", "../img/subscribe@2x.png");
+    }
+}
+
+footer {
+    height: 80px;
+}
